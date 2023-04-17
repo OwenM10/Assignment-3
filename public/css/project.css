@@ -335,10 +335,11 @@ span {
     float: left;
     width: 20%;
     text-align: center;
+    
   }
   
   .menu a {
-    background-color: #e5e5e5;
+    background-color: #f0eded;
     padding: 8px;
     margin-top: 7px;
     display: block;
@@ -349,16 +350,19 @@ span {
   .main {
     float: left;
     width: 60%;
-    padding: 0 20px;
+    padding: 5%;
+    text-align: center;
+    
   }
   
   .right {
     background-color: #e5e5e5;
-    float: left;
+    float: right;
     width: 20%;
     padding: 15px;
     margin-top: 7px;
     text-align: center;
+    
   }
   @media only screen and (max-width: 620px) {
     /* For mobile phones: */
