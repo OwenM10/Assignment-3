@@ -335,6 +335,7 @@ span {
     float: left;
     width: 20%;
     text-align: center;
+    padding-right: 35px;
     
   }
   
@@ -369,10 +370,12 @@ span {
   .footer {
     text-align: center;
     width: 100%;
-    position: fixed
+    
     left 0;
     bottom: 0;
-    display:flex
+    
+    padding-right: 35px;
+    flex-wrap: wrap;
   }
   .footer a {
     background-color: #f0eded;
@@ -381,6 +384,7 @@ span {
     display: block;
     width: 100%;
     color: black;
+
   }
 
   
@@ -403,4 +407,74 @@ span {
     border: 3px solid rgb(57, 62, 70);
     padding: 0 2em 1em;
     text-align: center;
+}
+
+.slider{
+  margin:50px auto;
+  width: 70%;
+}
+
+.img-box img{
+  width:100%
+  
+}
+
+
+.rightbtn{
+  border: none;
+  outline: none;
+  background:#888;
+  padding:10px 30px;
+  font-size:20px;
+  color:#ddd;
+  cursor: pointer;
+  margin: 10px auto;
+  
+}
+
+.leftbtn{
+  border: none;
+  outline: none;
+  background:#888;
+  padding:10px 30px;
+  font-size:20px;
+  color:#ddd;
+  cursor: pointer;
+  margin: 10px auto;
+  
+}
+
+.leftbtn:hover {
+  background: #111;
+}
+
+.rightbtn:hover {
+  background: #111;
+}
+
+.square {
+  height: auto;
+  max-width: 100%;
+  border-color: #6F432A #98633B;
+  border-image: none;
+  border-radius: 0 0 0 0;
+  border-style: solid;
+  border-width: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#main_image{
+  width: 1000px;
+  display: block;
+  margin: 0 auto;
+}
+
+#image_list {
+  width: 800px
+}
+
+
+.spacing {
+  padding-top: 4%;
 }

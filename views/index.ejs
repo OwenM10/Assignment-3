@@ -20,14 +20,15 @@
         <div class="bottom" aria-hidden="true">Smart Home</div>
       </section>
     -->
-      <div>
+      <div class="spacing">
         <h3 id="date_display"></h3>
       </div>
       <form>
-        <div>
+        <div class="spacing">
           <label>Notifications</label>
           <input type="checkbox" id="notifications" checked />
         </div>
+      <div class="spacing">
         <div>
           <label>Power Mode</label>
         </div>
@@ -55,7 +56,8 @@
             <input type="radio" id="full" name="lighting_mode" value="Full" />
           </div>
         </div>
-        <div>
+      </div>
+        <div class="spacing">
           <label>Location</label>
           <input
             type="text"
@@ -64,7 +66,7 @@
             value="L7W 4T8"
           /><span id="location_error" class="error-span"></span>
         </div>
-        <div>
+        <div class="spacing">
           <label>Temperature</label>
           <input
             type="number"
@@ -76,10 +78,10 @@
             value="21"
           /><span id="temperature_error" class="error-span"></span>
         </div>
-        <div>
+        <div class="spacing">
           <label></label>
-          <button type="submit" value="Update" id="update_settings" class="btn btn-outline-primary">Submit</button>
-          <button type="reset" value="Reset" id="reset_form" class="btn btn-outline-primary">Reset</button>
+          <button type="submit" value="Update" id="update_settings" class="btn btn-warning">Submit</button>
+          <button type="reset" value="Reset" id="reset_form" class="btn btn-warning">Reset</button>
         </div>
         <h2>Temporary Temp</h2>
         <div>
