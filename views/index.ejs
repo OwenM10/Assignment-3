@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Smart Home</title>
   </head>
-  <body>
+  <body class="body">
     
     <div style="background-color:#e5e5e5;padding:15px;text-align:center;">
       <h1>Smart Home</h1>
@@ -23,7 +23,7 @@
       <div class="spacing">
         <h3 id="date_display"></h3>
       </div>
-      <form>
+      <form id = "index-form" action="/update-index" method="post">
         <div class="spacing">
           <label>Notifications</label>
           <input type="checkbox" id="notifications" checked />
@@ -128,7 +128,14 @@
         <label>Temperature&nbsp;</label
         ><span class="current-setting" id="setting_temperature">21</span
         ><span>°C</span>
+        <% if(beans) { %>
+          <h1><%= beans.temperature %></h1> 
+          <%} else { %>
+            <h1>Your Profile</h1>
+          <%} %>
       </div>
+       <!-- user."name" of the variable you want to be changed-->
+      
       </div>
   </div>
     <%- include ('layouts/footer') -%>

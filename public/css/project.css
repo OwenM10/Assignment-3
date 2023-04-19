@@ -340,7 +340,7 @@ span {
   }
   
   .menu a {
-    background-color: #f0eded;
+    background-color: #EC9F05;
     padding: 8px;
     margin-top: 7px;
     display: block;
@@ -354,11 +354,11 @@ span {
     width: 60%;
     padding: 5%;
     text-align: center;
-    background-color: burlywood;
+    background-color: #D6DBD2;
   }
   
   .right {
-    background-color: #e5e5e5;
+    background-color: #ff5757;
     float: right;
     width: 20%;
     padding: 15px;
@@ -371,11 +371,12 @@ span {
     text-align: center;
     width: 100%;
     
-    left 0;
+    left: 0;
     bottom: 0;
     
     padding-right: 35px;
     flex-wrap: wrap;
+    
   }
   .footer a {
     background-color: #f0eded;
@@ -384,7 +385,7 @@ span {
     display: block;
     width: 100%;
     color: black;
-
+    
   }
 
   
@@ -470,11 +471,41 @@ span {
   margin: 0 auto;
 }
 
-#image_list {
-  width: 800px
-}
+
 
 
 .spacing {
   padding-top: 4%;
+}
+
+
+.main2{
+  display: flex;
+  width: 50vw;
+  height: 50vw;
+  
+ align-items: center;
+ margin: 0 auto;
+}
+.row1{
+border: 1px solid black;
+width: 33%;
+height: 100%;
+margin: 0 auto;
+}
+
+.col1{
+border: 1px solid black;
+height: calc(33%);
+text-align: center;
+font-size: 10vw;
+
+}
+
+.col1hover:hover{
+background-color: aqua;
+}
+
+.body{
+  background-color: #766C7F;
 }

@@ -30,6 +30,8 @@ const onSubmit = (evt) => {
 
   //calls reset errors function
   resetErrors();
+
+ 
   
   //declares variable notifications and assigns it the boolean value of whether the checkbox with the ID notifications is checked or not.
   let notifications = $("#notifications").checked;
@@ -72,12 +74,15 @@ const onSubmit = (evt) => {
   } else {
     $("#setting_temperature").textContent = temperature;
   }
+
+
+  $("#index-form").submit(); //Seession to send to it
 }
 //////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////
 
-
+ 
 
 
 //decalre function called TempTimerFunction
