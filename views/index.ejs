@@ -10,7 +10,7 @@
   <body class="body">
     
     <div style="background-color:#e5e5e5;padding:15px;text-align:center;">
-      <h1>Smart Home</h1>
+      <h1 class="title">Smart Home</h1>
     </div>
     <div style="overflow:auto">
       <%- include ('layouts/menu') -%>
@@ -83,13 +83,13 @@
           <button type="submit" value="Update" id="update_settings" class="btn btn-warning">Submit</button>
           <button type="reset" value="Reset" id="reset_form" class="btn btn-warning">Reset</button>
         </div>
-        <h2>Temporary Temp</h2>
-        <div>
+        <h2 class="spacing">Temporary Temp</h2>
+        <div class="spacing">
           <label for="time">Enter time (hh:mm):</label>
           <input type="text" id="time" name="time" placeholder="00:00" class="form-control">
           
         </div>
-        <div id="tempTemperature">
+        <div id="tempTemperature" class="spacing">
           <label for="temp">Enter Temperature:</label>
           <input 
             type="number"

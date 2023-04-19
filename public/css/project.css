@@ -340,12 +340,15 @@ span {
   }
   
   .menu a {
-    background-color: #EC9F05;
+    background-color: #9adfe6;
     padding: 8px;
     margin-top: 7px;
     display: block;
     width: 100%;
     color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+    border-radius: 20%;
     
   }
   
@@ -354,17 +357,18 @@ span {
     width: 60%;
     padding: 5%;
     text-align: center;
-    background-color: #D6DBD2;
+    background-color: #bdc3c7;
+    font-size: 2vh;
   }
   
   .right {
-    background-color: #ff5757;
+    background-color: #9adfe6;
     float: right;
     width: 20%;
     padding: 15px;
     margin-top: 7px;
     text-align: center;
-    
+    border-radius: 20%;
   }
 
   .footer {
@@ -377,14 +381,17 @@ span {
     padding-right: 35px;
     flex-wrap: wrap;
     
+    background-color: none;
   }
   .footer a {
-    background-color: #f0eded;
+    background-color: none;
     
     margin-top: 7px;
     display: block;
     width: 100%;
     color: black;
+    
+    
     
   }
 
@@ -507,5 +514,13 @@ background-color: aqua;
 }
 
 .body{
-  background-color: #766C7F;
+  
+background: linear-gradient(90deg, rgba(44,62,80,1) 0%, rgba(189,195,199,1) 20%, rgba(189,195,199,1) 80%, rgba(44,62,80,1) 100%);
+}
+
+
+.title{
+  padding-top: 2%;
+  padding-bottom: 2%;
+  font-family:Georgia, 'Times New Roman', Times, serif
 }
