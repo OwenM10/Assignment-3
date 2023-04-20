@@ -26,14 +26,14 @@ app.get("/", (req, res) => {
   //res.sendFile(path.resolve(__dirname + "/views/", "index.html"));
     console.log(req.session)
 
-  let beans = req.session.beans;  //user = variable, make sure to use everywhere when needed
-  res.render("index", {beans})
+  let user = req.session.user;  //user = variable, make sure to use everywhere when needed
+  res.render("index", {user})
 });
 
 app.post("/update-index", (req, res)=>{
   console.log(req.body);
 
-  req.session.beans= req.body;
+  req.session.user= req.body;
 
   res.redirect("/") //SEsions stuff
 })

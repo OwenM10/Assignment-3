@@ -9,8 +9,11 @@
   </head>
   <body class="body">
     
-    <div style="background-color:#e5e5e5;padding:15px;text-align:center;">
-      <h1 class="title">Smart Home</h1>
+    <div class="titlename">
+      <section class="wrapper">
+        <div class="top">Smart Homie</div>
+        <div class="bottom" aria-hidden="true">Smart Homie</div>
+      </section>
     </div>
     <div style="overflow:auto">
       <%- include ('layouts/menu') -%>
@@ -26,7 +29,7 @@
       <form id = "index-form" action="/update-index" method="post">
         <div class="spacing">
           <label>Notifications</label>
-          <input type="checkbox" id="notifications" checked />
+          <input type="checkbox" id="notifications" name="notifications" checked />
         </div>
       <div class="spacing">
         <div>
@@ -64,6 +67,7 @@
             id="location"
             placeholder="Postal Code"
             value="L7W 4T8"
+            name = "location"
           /><span id="location_error" class="error-span"></span>
         </div>
         <div class="spacing">
@@ -113,28 +117,39 @@
     <div class="right">
       <h2>Current Settings</h2>
       <div>
-        <label>Notifications&nbsp;</label>
-        <span class="current-setting" id="setting_notifications">On</span>
-      </div>
-      <div>
-        <label>Lighting Mode&nbsp;</label>
-        <span class="current-setting" id="setting_lighting_mode">Eco</span>
-      </div>
-      <div>
-        <label>Location&nbsp;</label
-        ><span class="current-setting" id="setting_location">L7W 4T8</span>
-      </div>
-      <div>
-        <label>Temperature&nbsp;</label
-        ><span class="current-setting" id="setting_temperature">21</span
-        ><span>°C</span>
-        <% if(beans) { %>
-          <h1><%= beans.temperature %></h1> 
+        <% if(user) { %>
+          <p>Notifications: <%= user.notifications %></p> 
           <%} else { %>
-            <h1>Your Profile</h1>
+            <p>Notifications: Off</p>
           <%} %>
+        <span class="current-setting" id="setting_notifications"></span>
       </div>
-       <!-- user."name" of the variable you want to be changed-->
+      <div>
+        <% if(user) { %>
+          <p>Lightning Mode <%= user.lighting_mode %></p> 
+          <%} else { %>
+            <p>Lighting Mode: Off</p>
+          <%} %>
+        <span class="current-setting" id="setting_lighting_mode"></span>
+      </div>
+      <div>
+        <% if(user) { %>
+          <p>Postal Code: <%= user.location %></p> 
+          <%} else { %>
+            <p>Postal Code: L0L 1P0</p>
+          <%} %>
+        <span class="current-setting" id="setting_location"></span>
+      </div>
+      <div>
+        <% if(user) { %>
+          <p>Temperature: <%= user.temperature %>°C</p> 
+          <%} else { %>
+            <p>Temperature: 21°C</p>
+          <%} %>
+        <span class="current-setting" id="setting_temperature"></span>
+        
+      </div>
+       
       
       </div>
   </div>

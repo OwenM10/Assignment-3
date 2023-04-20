@@ -7,9 +7,13 @@
     <link rel="stylesheet" href="css/project.css">
 </head>
 <body class="body">
-    <div style="background-color:#e5e5e5;padding:15px;text-align:center;">
-        <h1>Smart Home</h1>
+    <div class="titlename">
+        <section class="wrapper">
+          <div class="top">Smart Homie</div>
+          <div class="bottom" aria-hidden="true">Smart Homie</div>
+        </section>
       </div>
+    <div style="overflow:auto">
     <%- include ('layouts/menu') -%>
     <main class="main">
         <h1>Privacy Policy</h1>
@@ -87,7 +91,8 @@
             
         
         <script src="js/slide-show.js"></script>
-    </main> 
+    </main>
+    </div> 
     <%- include ('layouts/footer') -%> 
 </body>
 </html>

@@ -7,9 +7,13 @@
     <title>Owen Smart Home System</title>
   </head>
   <body class="body">
-    <div style="background-color:#e5e5e5;padding:15px;text-align:center;">
-      <h1>Smart Home</h1>
+    <div class="titlename">
+      <section class="wrapper">
+        <div class="top">Smart Homie</div>
+        <div class="bottom" aria-hidden="true">Smart Homie</div>
+      </section>
     </div>
+    <div style="overflow:auto">
     <%- include ('layouts/menu') -%>
     <main class = "main">
       <h1>Your Profile</h1>
@@ -73,6 +77,8 @@
         </div>
       </div>
     </main>
+    
+  </div>
     <%- include ('layouts/footer') -%>
     <script src="js/profile.js"></script>
   </body>

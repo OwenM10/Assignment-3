@@ -45,7 +45,7 @@ boxes[i].classList.add("col1hover");
 const CheckForWin = ()=> {
 
     if ($("#box1").value == 1 && $("#box2").value == 1 && $("#box3").value == 1){
-        $("#WinnerMessage").textContent = "Player 1 Wins";
+        $("#WinnerMessage").textContent = "Player 1 Wins!";
         winner = true;
         //removes 
         for (let i =0; i < 9 ; i++){
@@ -55,7 +55,7 @@ const CheckForWin = ()=> {
     } 
 
     else if ($("#box1").value == 2 && $("#box2").value == 2 && $("#box3").value == 2){
-        $("#WinnerMessage").textContent = "Player 2 Wins";
+        $("#WinnerMessage").textContent = "Player 2 Wins!";
         winner = true;
         for (let i =0; i < 9 ; i++){
             boxes[i].classList.remove("col1hover");
@@ -64,7 +64,7 @@ const CheckForWin = ()=> {
     }
     
     else if ($("#box4").value == 1 && $("#box5").value == 1 && $("#box6").value == 1){
-        $("#WinnerMessage").textContent = "Player 1 Wins";
+        $("#WinnerMessage").textContent = "Player 1 Wins!";
         winner = true;
         for (let i =0; i < 9 ; i++){
             boxes[i].classList.remove("col1hover");
@@ -72,7 +72,7 @@ const CheckForWin = ()=> {
     } 
 
     else if ($("#box4").value == 2 && $("#box5").value == 2 && $("#box6").value == 2){
-        $("#WinnerMessage").textContent = "Player 2 Wins";
+        $("#WinnerMessage").textContent = "Player 2 Wins!";
         winner = true;
         for (let i =0; i < 9 ; i++){
             boxes[i].classList.remove("col1hover");
@@ -81,7 +81,7 @@ const CheckForWin = ()=> {
     }
 
     else if ($("#box7").value == 1 && $("#box8").value == 1 && $("#box9").value == 1){
-        $("#WinnerMessage").textContent = "Player 1 Wins";
+        $("#WinnerMessage").textContent = "Player 1 Wins!";
         winner = true;
         for (let i =0; i < 9 ; i++){
             boxes[i].classList.remove("col1hover");
@@ -90,7 +90,7 @@ const CheckForWin = ()=> {
     } 
 
     else if ($("#box7").value == 2 && $("#box8").value == 2 && $("#box9").value == 2){
-        $("#WinnerMessage").textContent = "Player 2 Wins";
+        $("#WinnerMessage").textContent = "Player 2 Wins!";
         winner = true;
         for (let i =0; i < 9 ; i++){
             boxes[i].classList.remove("col1hover");
@@ -99,7 +99,7 @@ const CheckForWin = ()=> {
     }
 
     else if ($("#box1").value == 1 && $("#box4").value == 1 && $("#box7").value == 1){
-        $("#WinnerMessage").textContent = "Player 1 Wins";
+        $("#WinnerMessage").textContent = "Player 1 Wins!";
         winner = true;
         for (let i =0; i < 9 ; i++){
             boxes[i].classList.remove("col1hover");
@@ -107,7 +107,7 @@ const CheckForWin = ()=> {
     } 
 
     else if ($("#box1").value == 2 && $("#box4").value == 2 && $("#box7").value == 2){
-        $("#WinnerMessage").textContent = "Player 2 Wins";
+        $("#WinnerMessage").textContent = "Player 2 Wins!";
         winner = true;
         for (let i =0; i < 9 ; i++){
             boxes[i].classList.remove("col1hover");
@@ -115,7 +115,7 @@ const CheckForWin = ()=> {
     }
 
     else if ($("#box2").value == 1 && $("#box5").value == 1 && $("#box8").value == 1){
-        $("#WinnerMessage").textContent = "Player 1 Wins";
+        $("#WinnerMessage").textContent = "Player 1 Wins!";
         winner = true;
         for (let i =0; i < 9 ; i++){
             boxes[i].classList.remove("col1hover");
@@ -124,7 +124,7 @@ const CheckForWin = ()=> {
     } 
 
     else if ($("#box2").value == 2 && $("#box5").value == 2 && $("#box8").value == 2){
-        $("#WinnerMessage").textContent = "Player 2 Wins";
+        $("#WinnerMessage").textContent = "Player 2 Wins!";
         winner = true;
         for (let i =0; i < 9 ; i++){
             boxes[i].classList.remove("col1hover");
@@ -133,7 +133,7 @@ const CheckForWin = ()=> {
     }
 
     else if ($("#box3").value == 1 && $("#box6").value == 1 && $("#box9").value == 1){
-        $("#WinnerMessage").textContent = "Player 1 Wins";
+        $("#WinnerMessage").textContent = "Player 1 Wins!";
         winner = true;
         for (let i =0; i < 9 ; i++){
             boxes[i].classList.remove("col1hover");
@@ -142,7 +142,7 @@ const CheckForWin = ()=> {
     } 
 
     else if ($("#box3").value == 2 && $("#box6").value == 2 && $("#box9").value == 2){
-        $("#WinnerMessage").textContent = "Player 2 Wins";
+        $("#WinnerMessage").textContent = "Player 2 Wins!";
         winner = true;
         for (let i =0; i < 9 ; i++){
             boxes[i].classList.remove("col1hover");
@@ -151,7 +151,7 @@ const CheckForWin = ()=> {
     }
 
     else if ($("#box1").value == 1 && $("#box5").value == 1 && $("#box9").value == 1){
-        $("#WinnerMessage").textContent = "Player 1 Wins";
+        $("#WinnerMessage").textContent = "Player 1 Wins!";
         winner = true;
         for (let i =0; i < 9 ; i++){
             boxes[i].classList.remove("col1hover");
@@ -160,7 +160,7 @@ const CheckForWin = ()=> {
     } 
 
     else if ($("#box1").value == 2 && $("#box5").value == 2 && $("#box9").value == 2){
-        $("#WinnerMessage").textContent = "Player 2 Wins";
+        $("#WinnerMessage").textContent = "Player 2 Wins!";
         winner = true;
         for (let i =0; i < 9 ; i++){
             boxes[i].classList.remove("col1hover");
@@ -169,7 +169,7 @@ const CheckForWin = ()=> {
     }
 
     else if ($("#box3").value == 1 && $("#box5").value == 1 && $("#box7").value == 1){
-        $("#WinnerMessage").textContent = "Player 1 Wins";
+        $("#WinnerMessage").textContent = "Player 1 Wins!";
         winner = true;
         for (let i =0; i < 9 ; i++){
             boxes[i].classList.remove("col1hover");
@@ -178,7 +178,7 @@ const CheckForWin = ()=> {
     } 
 
     else if ($("#box3").value == 2 && $("#box5").value == 2 && $("#box7").value == 2){
-        $("#WinnerMessage").textContent = "Player 2 Wins";
+        $("#WinnerMessage").textContent = "Player 2 Wins!";
         winner = true;
         for (let i =0; i < 9 ; i++){
             boxes[i].classList.remove("col1hover");
